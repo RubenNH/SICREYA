@@ -5,10 +5,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DashboardModule } from './modules/dashboard/dashboard.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ControllingComponent } from './modules/controlling/controlling.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ControllingComponent
   ],
   imports: [
     DashboardModule,
