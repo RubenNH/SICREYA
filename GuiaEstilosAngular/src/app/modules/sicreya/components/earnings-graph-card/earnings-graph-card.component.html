@@ -1,0 +1,134 @@
+<!-- <div class="card "> -->
+    <div>
+        <div class="col-md-12">
+            <h1 class="text-center fw-semibold titulo">{{titlePage}}</h1>                  
+            <h2 class="text-center text_tittle">Periodo {{periodMonth}} {{periodYear}}</h2>    
+            <h3 class="text-center">PORCENTAJE DE COMBRANZA EN RELACIÓN AL OBJETIVO DEL MES</h3>       
+          <div class="container row d-flex justify-content-center">
+            <div class="card col-sm-2  cobro carta text-dark">
+              <h5 class="text-center text_tiC">COBRO</h5>
+              <h1 class="text-center titulo">{{valorCob}}</h1>
+            </div>
+            <div class="card col-sm-2 objetivo carta text-dark">
+              <h5 class="text-center text_tiC">OBJETIVO DEL MES</h5>
+              <h1 class="text-center titulo">{{valorObM}}</h1>
+            </div> 
+            <div class="card col-sm-2 alcance carta text-dark">
+              <h5 class="text-center text_tiC">ALCANCE %</h5>
+              <h1 class="text-center titulo">{{valorAlc}}</h1>
+            </div>
+            <div class="card col-sm-2 montoSnIdntificar carta text-dark">
+              <h5 class="text-center text_tiC">MONTO SIN IDENTIFICAR</h5>
+              <h1 class="text-center titulo">{{valorMsI}}</h1>
+            </div>
+          </div>
+          <br>
+
+        </div>
+
+        <div class="container row ">
+          <!-- <div class="card col 3 carta" [style.border-color]="rojo"> -->
+          <div class="card col 3 carta border-dark"> 
+            <div class="card-header border-dark row " >
+              <div class="col-5">
+                <div class="d-flex justify-content-center align-items-center">
+                  <img src="./assets/img/avatars/6.png" class="w-px-100 h-px-100 rounded-circle" />
+                </div>
+                <h1 class="text-center">Liliana de Leon</h1>
+              </div>
+              <div class="col-7">
+                <h1 class="text-center text_tiC" >Total obtenido</h1>
+                <h1 class="text-center titulo text_tittle" [style.color]="rojo">{{valorObM}}</h1>
+                <h1 class="text-center text_tiC" >% Cobro</h1>
+                <h1 class="text-center titulo text_tittle" [style.color]="azul">{{valorAlc}}</h1>
+              </div>
+            </div>
+            <div class="row anohterMArg">
+              <div class="col-5 bg_color carta">
+                <h3 class="text-center text_tiC" >Agentes</h3>
+                <h1 class="text-center text_tittle">{{valorObM}}</h1>
+                <h3 class="text-center text_tiC" >Dias de cartera</h3>
+                <h1 class="text-center text_tittle">{{valorAlc}}</h1>
+              </div>
+              <div class="col-5 bg_color carta">
+                <h3 class="text-center text_tiC" >Pedidos</h3>
+                <h1 class="text-center text_tittle">{{valorObM}}</h1>
+                <h3 class="text-center text_tiC" >P. Detenidos</h3>
+                <h1 class="text-center text_tittle">{{valorAlc}}</h1>
+              </div>
+            </div>
+            <br>
+          </div>
+          <div class="card col 3 carta border-dark"> 
+            <div class="card-header border-dark row " >
+              <div class="col-5">
+                <div class="d-flex justify-content-center align-items-center">
+                  <img src="./assets/img/avatars/6.png" class="w-px-100 h-px-100 rounded-circle" />
+                </div>
+                <h1 class="text-center">Liliana de Leon</h1>
+              </div>
+              <div class="col-7">
+                <h1 class="text-center text_tiC" >Total obtenido</h1>
+                <h1 class="text-center titulo text_tittle" [style.color]="rojo">{{valorObM}}</h1>
+                <h1 class="text-center text_tiC" >% Cobro</h1>
+                <h1 class="text-center titulo text_tittle" [style.color]="azul">{{valorAlc}}</h1>
+              </div>
+            </div>
+            <div class="row anohterMArg">
+              <div class="col-5 bg_color carta">
+                <h3 class="text-center text_tiC" >Agentes</h3>
+                <h1 class="text-center text_tittle">{{valorObM}}</h1>
+                <h3 class="text-center text_tiC" >Dias de cartera</h3>
+                <h1 class="text-center text_tittle">{{valorAlc}}</h1>
+              </div>
+              <div class="col-5 bg_color carta">
+                <h3 class="text-center text_tiC" >Pedidos</h3>
+                <h1 class="text-center text_tittle">{{valorObM}}</h1>
+                <h3 class="text-center text_tiC" >P. Detenidos</h3>
+                <h1 class="text-center text_tittle">{{valorAlc}}</h1>
+              </div>
+            </div>
+            <br>
+          </div>
+          <div class="card col 3 carta border-dark"> 
+            <div class="card-header border-dark row " >
+              <div class="col-5">
+                <div class="d-flex justify-content-center align-items-center">
+                  <img src="./assets/img/avatars/6.png" class="w-px-100 h-px-100 rounded-circle" />
+                </div>
+                <h1 class="text-center">Liliana de Leon</h1>
+              </div>
+              <div class="col-7">
+                <h1 class="text-center text_tiC" >Total obtenido</h1>
+                <h1 class="text-center titulo text_tittle" [style.color]="rojo">{{valorObM}}</h1>
+                <h1 class="text-center text_tiC" >% Cobro</h1>
+                <h1 class="text-center titulo text_tittle" [style.color]="azul">{{valorAlc}}</h1>
+              </div>
+            </div>
+            <div class="row anohterMArg">
+              <div class="col-5 bg_color carta">
+                <h3 class="text-center text_tiC" >Agentes</h3>
+                <h1 class="text-center text_tittle">{{valorObM}}</h1>
+                <h3 class="text-center text_tiC" >Dias de cartera</h3>
+                <h1 class="text-center text_tittle">{{valorAlc}}</h1>
+              </div>
+              <div class="col-5 bg_color carta">
+                <h3 class="text-center text_tiC" >Pedidos</h3>
+                <h1 class="text-center text_tittle">{{valorObM}}</h1>
+                <h3 class="text-center text_tiC" >P. Detenidos</h3>
+                <h1 class="text-center text_tittle">{{valorAlc}}</h1>
+              </div>
+            </div>
+            <br>
+          </div>
+        </div>
+                
+        <!-- <div class="col-md-4 ">
+          <div class="chart-container justify-content-center mx-4 margin_toUp">
+            <canvas id="MyChart2">{{ chart2 }}</canvas>
+          </div>
+          <div class="text-center fw-semibold pt-3 mb-2">62% de Crecimiento de la Empresa</div>
+          <br>
+        </div> -->
+    </div>
+<!-- </div> -->

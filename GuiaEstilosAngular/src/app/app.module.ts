@@ -6,6 +6,9 @@ import { SharedModule } from './shared/shared.module';
 
 import { ScriptService } from './script.service';
 import { ModulesModule } from './modules/modules.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+
 
 @NgModule({
   declarations: [
@@ -14,7 +17,8 @@ import { ModulesModule } from './modules/modules.module';
   imports: [
     BrowserModule,
     SharedModule,
-    ModulesModule
+    ModulesModule,
+    BrowserAnimationsModule,
   ],
   providers: [
     ScriptService

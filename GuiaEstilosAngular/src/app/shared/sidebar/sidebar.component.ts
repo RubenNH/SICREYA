@@ -14,21 +14,21 @@ export class SidebarComponent implements OnDestroy{
   constructor(private router: Router) {
     this.routerEvents = this.router.events.subscribe(
       (event: any) => {
-        if (event instanceof NavigationEnd) {
-          if (event.url === '/login') {
-            if (localStorage.getItem('token')) {
-              router.navigate(['/'])
-            } else {
-              this.showNav = false;
-            }
-          } else {
-            if (localStorage.getItem('token')) {
+        // if (event instanceof NavigationEnd) {
+        //   if (event.url === '/login') {
+        //     if (localStorage.getItem('token')) {
+        //       router.navigate(['/'])
+        //     } else {
+        //       this.showNav = false;
+        //     }
+        //   } else {
+        //     if (localStorage.getItem('token')) {
               this.showNav = true;
-            } else {
-              router.navigate(['/login']);
-            }
-          }
-        }
+        //     } else {
+        //       router.navigate(['/login']);
+        //     }
+        //   }
+        // }
       }
     )
   }
