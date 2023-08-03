@@ -1,0 +1,30 @@
+<div class="card h-100">
+    <div class="card-header d-flex align-items-center justify-content-between pb-0">
+        <div class="card-title mb-0">
+            <h5 class="m-0 me-2">{{title}}</h5>
+            <small class="text-muted">{{amount | number}} Ventas Totales</small>
+        </div>
+        <div class="dropdown">
+            <button class="btn p-0" type="button" id="orderedStatistics" data-bs-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                <i class="bx bx-dots-vertical-rounded"></i>
+            </button>
+            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="orderedStatistics">
+                <a class="dropdown-item" href="javascript:void(0);">Seleccionar Todo</a>
+                <a class="dropdown-item" href="javascript:void(0);">Recargar</a>
+                <a class="dropdown-item" href="javascript:void(0);">Compartir</a>
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <div class="d-flex flex-column align-items-center gap-1">
+                <h2 class="mb-2">{{total | number}}</h2>
+                <span>Ordenes Totales</span>
+            </div>
+            <div class="chart-container chartBox">
+                <canvas id="MyChart4">{{ chart }}</canvas>
+            </div>
+        </div>
+    </div>
+</div>

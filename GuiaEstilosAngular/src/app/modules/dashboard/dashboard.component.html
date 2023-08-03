@@ -1,0 +1,36 @@
+<div class="row">
+    <div class="col-lg-8 mb-4 order-0">
+        <app-welcome-card></app-welcome-card>
+    </div>
+    <div class="col-lg-4 col-md-4 order-1">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 col-6 mb-4">
+                <app-info-card title="Ganancias" amount="12628" percent="72.80" img="1" [positive]="true"></app-info-card>
+            </div>
+            <div class="col-lg-6 col-md-12 col-6 mb-4">
+                <app-info-card title="Ventas" amount="4676" percent="28.42" img="2" [positive]="true"></app-info-card>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-lg-8 order-2 order-md-3 order-lg-2 mb-4">
+        <app-earnings-graph-card title="Ganancias Totales"></app-earnings-graph-card>
+    </div>
+    <div class="col-12 col-md-8 col-lg-4 order-3 order-md-2">
+        <div class="row">
+            <div class="col-6 mb-4">
+                <app-info-card title="Pagos" amount="2456" percent="14.82" img="3" [positive]="false"></app-info-card>
+            </div>
+            <div class="col-6 mb-4">
+                <app-info-card title="Transacciones" amount="14857" percent="28.14" img="4" [positive]="true"></app-info-card>
+            </div>
+            <div class="col-12 mb-4">
+                <app-profile-report title="Reporte de Perfil" year="2022" amount="84686" percent="68.2" [positive]="true"></app-profile-report>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-6 col-lg-4 col-xl-4 order-0 mb-4">
+        <app-order-details title="Estadísticas de Orden" amount="42820" total="8258"></app-order-details>
+    </div>
+</div>

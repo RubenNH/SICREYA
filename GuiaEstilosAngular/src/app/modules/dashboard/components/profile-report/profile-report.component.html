@@ -1,0 +1,19 @@
+<div class="card">
+    <div class="card-body">
+        <div class="d-flex justify-content-between flex-sm-row flex-column gap-3">
+            <div class="d-flex flex-sm-column flex-row align-items-start justify-content-between">
+                <div class="card-title">
+                    <h5 class="text-nowrap mb-2">{{title}}</h5>
+                    <span class="badge bg-label-warning rounded-pill">Año {{year}}</span>
+                </div>
+                <div class="mt-sm-auto">
+                    <small [class]="getClasses()"><i [class]="getIcon()"></i> {{getPercent()}}</small>
+                    <h3 class="mb-0">${{amount | number}}</h3>
+                </div>
+            </div>
+            <div class="chart-container" style="position: relative; max-width: 223px;">
+                <canvas id="MyChart3">{{ chart }}</canvas>
+            </div>
+        </div>
+    </div>
+</div>
