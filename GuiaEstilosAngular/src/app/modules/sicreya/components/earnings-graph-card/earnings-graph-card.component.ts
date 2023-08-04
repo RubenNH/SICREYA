@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-
+import {MatTableModule} from '@angular/material/table';
 import { Chart } from 'chart.js/auto';
 
 @Component({
@@ -20,7 +20,12 @@ export class EarningsGraphCardComponent implements OnInit {
   azul: string = '#0093DD';
   naranja: string = '#FFA500';
   avatars: string[] = ['1', '2', '3']
-  
+  people: any[] = [
+    { id: 1, name: 'John Doe', age: 30, email: 'john@example.com' },
+    { id: 2, name: 'Jane Smith', age: 25, email: 'jane@example.com' },
+    { id: 3, name: 'Bob Johnson', age: 40, email: 'bob@example.com' },
+    // Add more data as needed
+  ];
   chart: any;
   chart2: any;
   barChart: any;
@@ -39,17 +44,15 @@ export class EarningsGraphCardComponent implements OnInit {
           'Jul'
         ],
         datasets: [{
-          label: '2023',
+          label: 'COBRO OBTENIDO',
           data: [18, 7, 15, 29, 18, 12, 9],
-          borderColor: 'rgb(204, 0, 0)',
-          backgroundColor: 'rgb(204, 0, 0)',
+          backgroundColor: '#0093DD',
           barThickness: 12,
           borderRadius: 35,
         }, {
-          label: '2022',
-          data: [-13, -18, -9, -14, -5, -17, -15],
-          borderColor: 'rgb(0, 147, 221)',
-          backgroundColor: 'rgb(0, 147, 221)',
+          label: 'OBJETIVO',
+          data: [13, 18, 9, 14, 5, 17, 15],
+          backgroundColor: 'rgb(204, 0, 0)',
           barThickness: 12,
           borderRadius: 35,
         }]
@@ -76,14 +79,14 @@ export class EarningsGraphCardComponent implements OnInit {
       type: 'doughnut',
       data: {
         labels: [
-          '2023', 'OBJETIVO'
+          'ALCANCE','OBJETIVO'
         ],
         datasets: [{
           label: 'Ingresos',
-          data: [41.2, 32.5],
+          data: [650000.2, 890700.5],
           backgroundColor: [
-            'rgb(204, 0, 0)',
-            'rgb(0, 147, 221)',
+            '#0093DD',
+            '#DBDBDB',
           ],
           
         }],

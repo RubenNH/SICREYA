@@ -26,6 +26,21 @@
 
         </div>
 
+        <div class="container row d-flex justify-content-center">
+          <div class="col-md-4 d-flex flex-column justify-content-center">
+            <canvas id="MyChart2">{{ chart2 }}</canvas>
+            <div class="text-center fw-semibold pt-3 mb-2">Cobro de este periodo</div>
+            <br>
+          </div>
+          <div class="col-md-5 d-flex flex-column justify-content-center">
+            <canvas id="MyChart">{{ chart }}</canvas>
+            <div class="text-center fw-semibold pt-3 mb-2">Seguimiento de cobro del año</div>
+            <!-- Add any additional content here if needed -->
+            <br>
+          </div>
+
+        </div>
+      
         <div class="container row ">
           <!-- <div class="card col 3 carta" [style.border-color]="rojo"> -->
           <div class="card col 3 carta border-dark"> 
@@ -122,13 +137,40 @@
             <br>
           </div>
         </div>
-                
-        <!-- <div class="col-md-4 ">
-          <div class="chart-container justify-content-center mx-4 margin_toUp">
-            <canvas id="MyChart2">{{ chart2 }}</canvas>
-          </div>
-          <div class="text-center fw-semibold pt-3 mb-2">62% de Crecimiento de la Empresa</div>
-          <br>
-        </div> -->
+
+        <div class="card container fluid borderer">
+          <table class="table table-striped table-bordered borderer">
+            <thead>
+              <tr class="table-active">
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>    
+
+
     </div>
 <!-- </div> -->
